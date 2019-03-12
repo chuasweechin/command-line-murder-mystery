@@ -29,8 +29,7 @@ cat interviews/interview-699607
 
 
 // find the Suspect vehicle and eliminate by owner height
-grep L337 vehicles -A3 | grep Blue -C1 | grep Honda -A2
-
+cat vehicles | grep L337 -A5 | grep Blue -C3 | grep Honda -A5
 
 
 // check the owner of vehicle memberships and eliminate by membership
@@ -66,6 +65,7 @@ cat interviews/interview-904020
 
 // check profile of Suspect, Jeremy Bowers and eliminate by sex and statement
 cat people | grep "Jeremy Bowers"
+cat streets/Dunstable_Road
 cat streets/Dunstable_Road | grep "SEE INTERVIEW"
 cat interviews/interview-9620713
 
