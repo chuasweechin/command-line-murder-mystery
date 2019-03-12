@@ -1,10 +1,9 @@
 // find the clue by the Police
 cat crimescene | grep "CLUE"
 
-
-
 // check profile of Witness, Annabel. We know she is a female with New Zealand accent
 cat people | grep "Annabel"
+cat people | grep "Annabel" | egrep "F\s"
 
 grep "Annabel Sun" AAA
 grep "Annabel Sun" Delta_SkyMiles
